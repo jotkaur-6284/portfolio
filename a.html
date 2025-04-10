@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Project Talk</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    .contactmain {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .conectleft, .conectright {
+      flex: 1 1 450px;
+      max-width: 500px;
+      background-color: #1f2937;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .touch {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #58a6ff;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    .form label {
+      flex: 1;
+      position: relative;
+    }
+
+    .input, .input01 {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #355891;
+      border-radius: 5px;
+      background-color: transparent;
+      color: #c9d1d9;
+    }
+
+    .form label span {
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      font-size: 0.9em;
+      color: #8b949e;
+      transition: 0.3s ease;
+      pointer-events: none;
+    }
+
+    .input:focus + span,
+    .input:valid + span,
+    .input01:focus + span,
+    .input01:valid + span {
+      top: -10px;
+      font-size: 0.75em;
+      color: #58a6ff;
+      background-color: #1f2937;
+      padding: 0 5px;
+    }
+
+    .input01 {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .fancy {
+      background-color: white;
+      border: 2px solid #355891;
+      border-radius: 0px;
+      color: #355891;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 10px 30px;
+      position: relative;
+      overflow: hidden;
+      font-size: 14px;
+      align-self: flex-start;
+      margin-top: 10px;
+    }
+
+    .fancy:hover {
+      background-color: #355891;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .conectright .contn {
+      background-color: #1e40af;
+      border-radius: 8px;
+      padding: 1.5rem;
+      color: #f0f6fc;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-top: 1rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .touch {
+        font-size: 1.5rem;
+      }
+      .fancy {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="contactmain">
+  <div class="conectleft">
+    <form class="form">
+      <div class="touch">Get In Touch</div>
+      <div class="flex">
+        <label>
+          <input class="input" type="text" required>
+          <span>First Name</span>
+        </label>
+        <label>
+          <input class="input" type="text" required>
+          <span>Last Name</span>
+        </label>
+      </div>
+      <label>
+        <input class="input" type="email" required>
+        <span>Email</span>
+      </label>
+      <label>
+        <input class="input" type="tel" required>
+        <span>Contact Number</span>
+      </label>
+      <label>
+        <textarea class="input01" required></textarea>
+        <span>Message</span>
+      </label>
+      <button type="submit" class="fancy">Submit</button>
+    </form>
+  </div>
+
+  <div class="conectright">
+    <div class="touch">Let's Talk About Your Next Project</div>
+    <div class="contn">
+      Got an idea in mind or a project you're excited to bring to life? I'm always up for a great collaboration. 
+      Whether it’s a website, a branding concept, or something entirely unique — I’m here to help you build it from scratch 
+      or level up what you already have. Let’s connect, plan together, and turn your vision into something real and impactful.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

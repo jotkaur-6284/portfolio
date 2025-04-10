@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Portfolio</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-container" id="navContainer">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contect">Contect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resume.pdf" download>Download Resume</a>
+        </li>
+      </ul>
+      <div style="display: flex; align-items: center;">
+        <input type="checkbox" class="switch" id="modeSwitch" onclick="toggleDarkMode()">
+        <span class="mode-text" id="modeText">Dark Mode</span>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const modeText = document.getElementById('modeText');
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        modeText.textContent = 'White Mode';
+      } else {
+        modeText.textContent = 'Dark Mode';
+      }
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementById('navContainer');
+      const toggle = document.getElementById('menuToggle');
+      nav.classList.toggle('active');
+      toggle.classList.toggle('active');
+    }
+  </script>
+
+  <div class="mainm">
+    <div class="intro">
+      <h2>Welcome, This is </h2>
+      <h1>NAVJOT KAUR</h1>
+      <div class="role">
+        <span>Web Developer.</span>
+        <span>Frontend Developer.</span>
+        <span>Full Stack Developer.</span>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="images/back-removebg-preview.png" alt="Developer at work">
+    </div>
+  </div>
+  <br>
+
+  <!-- cube -->
+  <div class="chatone">
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <!-- cube end -->
+
+
+
+    <section id="about">
+      <div class="biomain">
+        <div class="bioleft b">
+          <div class="image"><img src="images/p.PNG" alt="photo"
+              style="height: 137%; width: 110%; border-radius: 50%; margin-top: 5%; border: 5px solid rgb(86, 43, 150);">
+          </div>
+          <p class="perI"><br><br><i class="fa-solid fa-pen-to-square" style="color: #3a3399;"></i> Personal Information
+          </p>
+          <ul class="infodetail">
+            <li><i class="fa-solid fa-file-signature" style="color: #3a3399;"></i> <b> Name:</b>navjot kaur</li><br>
+            <li><i class="fa-solid fa-address-book" style="color: #4639a7;"></i> <b>contact:</b>6280309057</li><br>
+            <li><i class="fa-solid fa-envelope" style="color: #3e3c9a;"></i> <b> email:</b>jotkaur6284@gmail.com</li>
+            <br>
+            <li><i class="fa-solid fa-phone" style="color: #484ba3;"></i> <b> phone</b>:6280309057</li><br>
+            <li><i class="fa-solid fa-city" style="color: #4a3b97;"></i> <b> city:</b>sirhind,sanipur</li><br>
+          </ul>
+        </div>
+        <div class="bioright b">
+          <div class="bf">
+            <center>
+              <p class="greet">Hi, I'm <b style="font-size: 4rem; background-color: #242778; color: white;">Navjot
+                  Kaur</b><br>Web Developer</p>
+            </center>
+            <br>
+            <p class="afterg">Current student working towards BCA Final in computer science and seeking opportunity to
+              being career. Dedicated student
+              with strong programming skills in HTML, CSS, and Python completed by hands-on web development projects.
+            </p>
+            <ul class="afterg s"><br>
+              <li style="width: 50%;">Procient in programming languages such as HTML, CSS, JS, and Python,
+                with hands-on experience in building
+                applications.</li><br>
+              <li style="margin-left: 50%;">I'm positive person, naturally curious, and hardly working to improve my
+                soft
+                and technical skills.</li><br>
+              <li style="width: 50%;">Strong communication skills, both verbal and written, allowing for
+                effective collaboration with peers and stakeholders.</li><br>
+              <li style="margin-left: 50%;">Committed to continuous learning, actively participating in workshops and
+                online courses to enhance technical skills</li><br>
+              <li style="width: 50%;">There’s nothing I enjoy more than coding, searching, solving errors.
+              </li><br>
+              <li style="margin-left: 50%;">There’s nothing I enjoy more than coding, searching, solving errors.</li>
+              <br>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="edu">education</div>
+    <div class="card-container">
+      <div class="cardd">
+        <div class="bg">
+          <div class="card-content">
+            <h2>10th</h2><br><br>
+            <div class="school">Govt. High School Sanipur</div></br>
+            <div class="percentage">80%</div><br><br>
+            <div class="desc">Completed secondary education with distinction.</div>
+          </div>
+        </div>
+        <div class="blob"></div>
+      </div>
+
+      <div class="cardd middle">
+        <div class="bg">
+          <div class="card-content">
+            <h2>BCA - 3rd</h2><br><br>
+            <div class="school">Mata Gujri College, Fatehgarh Sahib</div><br>
+            <div class="percentage">Current</div><br><br><br>
+            <div class="desc">Pursuing Bachelor's in Computer Applications.</div>
+          </div>
+        </div>
+        <div class="blob"></div>
+      </div>
+
+      <div class="cardd">
+        <div class="bg">
+          <div class="card-content">
+            <h2>12th</h2><br><br>
+            <div class="school">Govt. Girls. Sec. Sec. School Sirhind</div><br>
+            <div class="percentage">92%</div><br><br>
+            <div class="desc">Completed higher secondary with outstanding grades.</div>
+          </div>
+        </div>
+        <div class="blob"></div>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
+
+  <!-- cube -->
+  <div class="chatone">
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <!-- cube end -->
+
+
+    <section id="meskill">
+      <div class="meskillmain">
+
+        <div class="meskillright meb">
+          <div class="mesf">
+            <center>
+              <p class="megreet">What are my <b
+                  style="font-size: 4rem; background-color: #18236aad; color: white;">Skills</b> Include</p>
+            </center>
+            <br>
+          </div>
+          <div class="meskillicon">
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/teamimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Team<br>work</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/adapimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Adaptability</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/ambimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Ambivert</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/commuimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">communi-cation</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="meskillicon">
+            <div class="mecard">
+              <img src="images/soft_skills_img/creatimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Creativity</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/hardimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Hard Working</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/leaderimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Leader-ship</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/soft_skills_img/problemimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Problem-solving</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="meskillicon">
+            <div class="mecard">
+              <img src="images/soft_skills_img/timeimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Time Management</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="meskillicon" id="metechskills">
+            <div class="mecard">
+              <img src="images/htmlimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">HTML</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/cssimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">CSS</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/jsimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">JavaScript</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/phpimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">PHP</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="meskillicon">
+            <div class="mecard">
+              <img src="images/sqlimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">MySQL</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/cppimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">github</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/cimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">visual studio code</p>
+              </div>
+            </div>
+
+            <div class="mecard">
+              <img src="images/pythonimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">Python</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="meskillicon">
+            <div class="mecard">
+              <img src="images/javaimg-removebg-preview.png" alt="" class="meskillimg">
+              <div class="mecard__content">
+                <p class="mecard__title">java</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="mebioleft meb">
+          <p class="mesperI"><br><br><i class="fa-solid fa-pen-to-square" style="color: #3a3399;"></i>
+            Skills</p>
+          <div class="mevt">
+            <div style="margin-left: -8%; margin-right: 10%;">Techniqual skills </div>
+            <div>Soft skills</div></b>
+          </div>
+
+          <div class="mesrightmain" id="mesoftskills">
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">Team work</li>
+              <li class="li">communication</li>
+              <li class="li">Hard working</li>
+            </ul>
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">Ambivert</li>
+              <li class="li">Creativity</li>
+              <li class="li">Problem-solving</li>
+            </ul>
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">Adaptability</li>
+              <li class="li">Team work</li>
+              <li class="li">Time Management</li>
+            </ul>
+          </div><br><br>
+
+          <div class="mesrightmain" style="gap: 10%;" id="metechskills">
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">HTML</li>
+              <li class="li">CSS</li>
+              <li class="li">java script</li>
+            </ul>
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">python</li>
+              <li class="li">SQL</li>
+              <li class="li">php</li>
+            </ul>
+            <ul class="sm:pl-5 list-disc list-inside">
+              <li class="li">java</li>
+              <li class="li">C</li>
+              <li class="li">C++</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <div class="edu">Projects</div><br><br><br><br>
+    <div class="big">
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/1st_project.PNG);">
+        </div>
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">github
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+
+      <!-- 2nd -->
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/2nd_project.jpeg);">
+        </div>
+
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+
+      <!-- 3rd -->
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/3rd_project.jpeg);">
+        </div>
+
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+
+      <!-- 4th -->
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/4th_project.jpeg);">
+        </div>
+
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+    </div>
+    <br>
+    <!--  -->
+    <div class="big">
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/5th_project.PNG);">
+        </div>
+
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+      <!-- 4th -->
+      <div class="card">
+        <div class="background" style="background-image: url(images/projects_images/2nd_project.jpeg);">
+        </div>
+
+        <a href="#">
+          <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="##">
+          <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <a href="###">
+          <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <!-- <path
+                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                </path> -->
+              </svg></span></div>
+        </a>
+
+        <div class="box box4"></div>
+      </div>
+
+
+    </div>
+    <!-- projects end -->
+
+    <!-- links -->
+
+    <div class="edu">Important links</div><br><br><br><br>
+
+
+    <div class="profiles">
+      <div class="pro-container">
+        <div class="pro-left">
+          <h1>How I Use GitHub</h1>
+          <p>
+            I use GitHub to manage all my personal and collaborative coding projects.
+            From version control to issue tracking and code reviews, GitHub makes it easy
+            to work with others and keep my code organized. I frequently contribute to
+            open source, create project repositories, and explore new tools through GitHub.
+          </p>
+          <a href="https://github.com/jotkaur-6284" target="_blank">Visit My GitHub Profile</a>
+        </div>
+        <div class="pro-right">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" />
+        </div>
+      </div>
+    </div>
+    <div class="profiles">
+      <div class="pro-container">
+        <div class="pro-left">
+          <h1>LinkedIn</h1>
+          <p>
+            I use LinkedIn to build and maintain my professional network, showcase my skills,
+            and stay updated with industry trends. It’s a powerful platform for connecting with like-minded
+            professionals,
+            exploring job opportunities, and sharing achievements. I also follow tech influencers and companies
+            to keep learning and stay inspired.
+          </p>
+          <a href="https://www.linkedin.com/in/jot-kaur-28692a224/" target="_blank">Visit My linkedin Profile</a>
+        </div>
+        <div class="pro-right">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" />
+        </div>
+      </div>
+</div>
+
+<div class="contactmain">
+  <div class="conectleft">
+    <form class="form">
+      <div class="touch">Get In Touch</div>
+      <div class="flex">
+        <label>
+          <input class="input" type="text" required>
+          <span>First Name</span>
+        </label>
+        <label>
+          <input class="input" type="text" required>
+          <span>Last Name</span>
+        </label>
+      </div>
+      <label>
+        <input class="input" type="email" required>
+        <span>Email</span>
+      </label>
+      <label>
+        <input class="input" type="tel" required>
+        <span>Contact Number</span>
+      </label>
+      <label>
+        <textarea class="input01" required></textarea>
+        <span>Message</span>
+      </label>
+      <button type="submit" class="fancy">Submit</button>
+    </form>
+  </div>
+
+  <div class="conectright">
+    <div class="touch">Let's Talk About Your Next Project</div>
+    <div class="contn">
+      Got an idea in mind or a project you're excited to bring to life? I'm always up for a great collaboration. 
+      Whether it’s a website, a branding concept, or something entirely unique — I’m here to help you build it from scratch 
+      or level up what you already have. Let’s connect, plan together, and turn your vision into something real and impactful.
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
